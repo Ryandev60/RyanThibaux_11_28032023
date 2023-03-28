@@ -1,0 +1,22 @@
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+        font-size: 288px;
+        color: $orange;
+        margin-bottom: 66px;
+    }
+
+    h2 {
+        font-size: 36px;
+        color: $orange;
+        margin-bottom: 182px;
+    }
+
+    a {
+        text-decoration: underline;
+        color: $orange;
+    }
+}

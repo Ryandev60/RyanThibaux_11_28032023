@@ -9,6 +9,9 @@
 @import "./components/appartment/main";
 @import "./components/appartment/rating";
 @import "./components/appartment/tag";
+@import "./components/multi/accordeon";
+@import "./components/error/error";
+@import "./components/about/banner";
 
 * {
     font-family: $font1;

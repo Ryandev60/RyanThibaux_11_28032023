@@ -1,7 +1,9 @@
 .appartment-info {
     margin-top: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    .appartment-info--top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .appartment-info--title {
         font-size: 36px;
         color: $orange;
@@ -36,5 +38,12 @@
         height: 64px;
         border-radius: 50%;
         margin-left: 10px;
+    }
+
+    .appartment-info--bottom {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 100px;
     }
 }

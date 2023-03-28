@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from '../components/appartment/Carousel';
 import Main from '../components/appartment/Main';
+import Footer from '../components/layout/Footer';
 import Header from '../components/layout/Header';
 import appartments from '../data/apartments.json';
 
@@ -28,7 +29,10 @@ const Appartment = () => {
                 hostPicture={selectedAppartment.host.picture}
                 rating={selectedAppartment.rating}
                 tags={selectedAppartment.tags}
+                description={selectedAppartment.description}
+                equipments={selectedAppartment.equipments}
             />
+            <Footer />
         </>
     );
 };
