@@ -1,0 +1,15 @@
+.appartment-tags {
+    margin-top: 20px;
+    display: flex;
+
+    .appartment-tag {
+        font-size: 14px;
+        min-width: 40px;
+        max-width: fit-content;
+        padding: 5px 20px;
+        background-color: $orange;
+        border-radius: 10px;
+        color: $white;
+        margin-right: 10px;
+    }
+}

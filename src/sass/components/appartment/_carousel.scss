@@ -1,0 +1,43 @@
+.appartment-carousel {
+    margin-top: 2rem;
+    position: relative;
+    height: 415px;
+    border-radius: 25px;
+    overflow: hidden;
+
+    .appartment-carousel--img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .appartment-carousel--arrow {
+        position: absolute;
+        font-size: 80px;
+        color: $white;
+        top: 50%;
+        cursor: pointer;
+        transform: translateY(-50%);
+    }
+
+    .appartment-carousel--arrow-left {
+        left: 42px;
+    }
+
+    .appartment-carousel--arrow-right {
+        right: 42px;
+    }
+
+    .appartment-carousel--img {
+        width: 100%;
+    }
+
+    .appartment-carousel--number {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        color: $white;
+    }
+}

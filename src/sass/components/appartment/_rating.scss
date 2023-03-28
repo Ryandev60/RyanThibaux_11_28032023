@@ -1,0 +1,13 @@
+.appartment-rating {
+    margin-top: 24px;
+    i {
+        font-size: 30px;
+    }
+    .fill {
+        color: $orange;
+    }
+
+    .empty {
+        color: $grey;
+    }
+}
