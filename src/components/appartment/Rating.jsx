@@ -1,12 +1,10 @@
 import React from 'react';
 
 const Rating = (props) => {
-    console.log(props.rating);
 
     const calcRate = (number) => {
         return number > props.rating ? 'empty' : 'fill';
     };
-    console.log(calcRate(5));
     return (
         <div className="appartment-rating">
             <i className={`fa-solid fa-star ${calcRate(1)}`}></i>

@@ -6,8 +6,6 @@ const Carousel = (props) => {
 
     const changeImg = (choice) => {
         if (choice === 'after') {
-            console.log(carouselImg.length);
-            console.log(currentImg);
             currentImg === carouselImg.length - 1
                 ? setCurrentImg(0)
                 : setCurrentImg(currentImg + 1);

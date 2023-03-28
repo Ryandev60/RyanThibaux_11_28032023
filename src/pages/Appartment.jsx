@@ -1,4 +1,5 @@
 import React from 'react';
+import { Navigate } from 'react-router-dom';
 import Carousel from '../components/appartment/Carousel';
 import Main from '../components/appartment/Main';
 import Footer from '../components/layout/Footer';
@@ -10,13 +11,16 @@ const Appartment = () => {
     const appartmentId = params.get('id');
 
     const searchSelectedAppartment = () => {
-        const test = appartments.filter(
+        const filterAppartment = appartments.filter(
             (appartment) => appartment.id === appartmentId
         );
-        return test[0];
+        return filterAppartment[0];
     };
 
     const selectedAppartment = searchSelectedAppartment();
+    if (!selectedAppartment) return <Navigate to="/error" />;
+
+    // !selectedAppartment && window.location.assign('/error');
 
     return (
         <>

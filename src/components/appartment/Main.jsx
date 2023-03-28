@@ -39,12 +39,12 @@ const Main = (props) => {
                     <Accordeon
                         title="Description"
                         description={props.description}
-                        key={"description"}
+                        key="description"
                     />
                     <Accordeon
                         title="Équipements"
                         equipments={props.equipments}
-                        key={"equipment"}
+                        key="equipment"
                     />
                 </div>
             </section>

@@ -1,7 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 
 const Card = (props) => {
+
+  
     return (
         <article className="card">
             <NavLink to={`/appartment?id=${props.id}`} className="card--link">

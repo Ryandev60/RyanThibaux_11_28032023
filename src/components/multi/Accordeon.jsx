@@ -2,7 +2,6 @@ import React from 'react';
 
 const Accordeon = (props) => {
     const deployAccordeon = (e) => {
-        console.log(e.style.transform);
         e.style.transform === 'rotate(180deg)'
             ? (e.style.transform = 'rotate(0deg)')
             : (e.style.transform = 'rotate(180deg)');
@@ -29,7 +28,7 @@ const Accordeon = (props) => {
                 <div className="accordeon--bottom accordeon--bottom__description">
                     <ul>
                         {props.equipments.map((equipment) => (
-                            <li>{equipment}</li>
+                            <li key={equipment}>{equipment}</li>
                         ))}
                     </ul>
                 </div>
