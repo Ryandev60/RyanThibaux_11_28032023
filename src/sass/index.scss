@@ -1,0 +1,13 @@
+@import "./utils/reset";
+@import "./utils/variable";
+@import "./components/layout/header";
+@import "./components/home/banner";
+@import "./components/home/cards";
+
+* {
+    font-family: $font1;
+}
+
+body {
+    margin: 0 100px;
+}
