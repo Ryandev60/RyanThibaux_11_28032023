@@ -18,5 +18,9 @@
     .footer--txt {
         color: $white;
         font-size: 24px;
+
+        @media screen and (max-width: 521px) {
+       font-size: 12px;
+        }
     }
 }

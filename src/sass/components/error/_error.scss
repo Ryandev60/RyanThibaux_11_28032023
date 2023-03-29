@@ -7,16 +7,33 @@
         font-size: 288px;
         color: $orange;
         margin-bottom: 66px;
+        @media screen and (max-width: 767px) {
+            font-size: 96px;
+            margin-top: 198px;
+            margin-bottom: 11px;
+        }
     }
 
     h2 {
         font-size: 36px;
         color: $orange;
         margin-bottom: 182px;
+        text-align: center;
+        font-weight: normal;
+        line-height: 142.6%;
+
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+        margin-bottom: 133px;
+
+        }
     }
 
     a {
         text-decoration: underline;
         color: $orange;
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
     }
 }

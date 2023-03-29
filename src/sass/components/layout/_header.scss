@@ -6,17 +6,31 @@
 
     .header--logo {
         height: 68px;
+        @media screen and (max-width: 580px) {
+            height: 43px;
+        }
+        @media screen and (max-width: 337px) {
+            height: 35px;
+        }
     }
 
     .header--ul {
         display: flex;
         justify-content: space-between;
         width: 250px;
+
+        @media screen and (max-width: 580px) {
+           width: 140px;
+        }
     }
 
     .header--link {
         font-size: 24px;
         color: $orange;
+        @media screen and (max-width: 580px) {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
     }
     .header--link__active {
         text-decoration: underline;

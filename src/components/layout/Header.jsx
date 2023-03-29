@@ -20,7 +20,7 @@ const Header = () => {
                                 URL === '/' && 'header--link__active'
                             }`}
                         >
-                            Acceuil
+                            Accueil
                         </NavLink>
                     </li>
                     <li className="header--li">

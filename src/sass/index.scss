@@ -1,17 +1,17 @@
-@import "./utils/reset";
-@import "./utils/variable";
-@import "./components/layout/header";
-@import "./components/layout/footer";
-@import "./components/home/banner";
-@import "./components/home/cards";
-@import "./components/home/card";
-@import "./components/appartment/carousel";
-@import "./components/appartment/main";
-@import "./components/appartment/rating";
-@import "./components/appartment/tag";
-@import "./components/multi/accordeon";
-@import "./components/error/error";
-@import "./components/about/banner";
+@import './utils/reset';
+@import './utils/variable';
+@import './components/layout/header';
+@import './components/layout/footer';
+@import './components/home/banner';
+@import './components/home/cards';
+@import './components/home/card';
+@import './components/appartment/carousel';
+@import './components/appartment/main';
+@import './components/appartment/rating';
+@import './components/appartment/tag';
+@import './components/multi/accordeon';
+@import './components/error/error';
+@import './components/about/banner';
 
 * {
     font-family: $font1;
@@ -20,4 +20,14 @@
 body {
     margin: 0 100px;
     overflow-x: hidden;
+
+    @media screen and (max-width: 1100px) {
+        margin: 60px;
+    }
+    @media screen and (max-width: 767px) {
+        margin: 40px;
+    }
+    @media screen and (max-width: 520px) {
+        margin: 20px;
+    }
 }

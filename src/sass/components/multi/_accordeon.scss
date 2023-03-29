@@ -15,10 +15,16 @@
         justify-content: space-between;
         border-radius: 10px;
         font-size: 20px;
+        @media screen and (max-width: 767px) {
+            font-size: 13px;
+        }
 
         i {
             font-size: 24px;
             cursor: pointer;
+            @media screen and (max-width: 767px) {
+                font-size: 15px;
+            }
         }
     }
 
@@ -33,6 +39,10 @@
         line-height: 142.6%;
         margin-top: -10px;
         border-radius: 10px;
+        @media screen and (max-width: 767px) {
+            font-size: 12px;
+            padding: 23px 12px 2px 12px;
+        }
     }
 
     .display {

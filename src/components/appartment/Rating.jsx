@@ -7,11 +7,13 @@ const Rating = (props) => {
     };
     return (
         <div className="appartment-rating">
-            <i className={`fa-solid fa-star ${calcRate(1)}`}></i>
-            <i className={`fa-solid fa-star ${calcRate(2)}`}></i>
-            <i className={`fa-solid fa-star ${calcRate(3)}`}></i>
-            <i className={`fa-solid fa-star ${calcRate(4)}`}></i>
-            <i className={`fa-solid fa-star ${calcRate(5)}`}></i>
+
+            <img src={`./images/star-${calcRate(1)}.png`} alt="Étoiles de notation" />
+            <img src={`./images/star-${calcRate(2)}.png`} alt="Étoiles de notation" />
+            <img src={`./images/star-${calcRate(3)}.png`} alt="Étoiles de notation" />
+            <img src={`./images/star-${calcRate(4)}.png`} alt="Étoiles de notation" />
+            <img src={`./images/star-${calcRate(5)}.png`} alt="Étoiles de notation" />
+            
         </div>
     );
 };

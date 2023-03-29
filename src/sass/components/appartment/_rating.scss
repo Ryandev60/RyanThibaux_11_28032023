@@ -1,13 +1,12 @@
 .appartment-rating {
     margin-top: 24px;
-    i {
-        font-size: 30px;
-    }
-    .fill {
-        color: $orange;
-    }
+    img {
+        padding: 0 5px;
+        height: 30px;
 
-    .empty {
-        color: $grey;
+        @media screen and (max-width: 767px) {
+            height: 15px;
+
+        }
     }
 }
