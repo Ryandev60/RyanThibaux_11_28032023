@@ -8,8 +8,8 @@ const Main = (props) => {
     const buildTag = props.tags.map((tag) => <Tag tag={tag} key={tag}/>);
 
     return (
-        <main>
-            <section className="appartment-info">
+        <section>
+            <article className="appartment-info">
                 <div className="appartment-info--top">
                     <div className="appartment-info--left">
                         <h1 className="appartment-info--title">
@@ -47,8 +47,8 @@ const Main = (props) => {
                         key="equipment"
                     />
                 </div>
-            </section>
-        </main>
+            </article>
+        </section>
     );
 };
 

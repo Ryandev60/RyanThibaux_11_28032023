@@ -25,17 +25,20 @@ const Appartment = () => {
     return (
         <>
             <Header />
-            <Carousel carouselImg={selectedAppartment.pictures} />
-            <Main
-                title={selectedAppartment.title}
-                location={selectedAppartment.location}
-                hostName={selectedAppartment.host.name}
-                hostPicture={selectedAppartment.host.picture}
-                rating={selectedAppartment.rating}
-                tags={selectedAppartment.tags}
-                description={selectedAppartment.description}
-                equipments={selectedAppartment.equipments}
-            />
+            <main>
+                <Carousel carouselImg={selectedAppartment.pictures} />
+                <Main
+                    title={selectedAppartment.title}
+                    location={selectedAppartment.location}
+                    hostName={selectedAppartment.host.name}
+                    hostPicture={selectedAppartment.host.picture}
+                    rating={selectedAppartment.rating}
+                    tags={selectedAppartment.tags}
+                    description={selectedAppartment.description}
+                    equipments={selectedAppartment.equipments}
+                />
+            </main>
+
             <Footer />
         </>
     );

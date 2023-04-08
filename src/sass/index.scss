@@ -17,17 +17,34 @@
     font-family: $font1;
 }
 
+html {
+    height: 100%;
+}
 body {
-    margin: 0 100px;
-    overflow-x: hidden;
+    height: 100%;
 
-    @media screen and (max-width: 1100px) {
-        margin: 60px;
+    header,
+    main {
+        margin: 0 100px;
+        overflow-x: hidden;
+        @media screen and (max-width: 1100px) {
+            margin: 0 60px;
+        }
+        @media screen and (max-width: 767px) {
+            margin: 0 40px;
+        }
+        @media screen and (max-width: 520px) {
+            margin: 0 20px;
+        }
     }
-    @media screen and (max-width: 767px) {
-        margin: 40px;
+
+    #root {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
     }
-    @media screen and (max-width: 520px) {
-        margin: 20px;
+
+    main {
+        flex-grow: 1;
     }
 }
