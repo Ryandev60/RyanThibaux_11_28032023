@@ -46,5 +46,8 @@
         transform: translateX(-50%);
         font-size: 18px;
         color: $white;
+        @media screen and (max-width: 520px) {
+            display: none;
+        }
     }
 }
